@@ -24,7 +24,7 @@ My Server Project is a Python-based web server that allows you to host an HTML w
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/my_server_project.git
+   git clone https://github.com/coderooz/my_server_project.git
    cd my_server_project
    ```
 
@@ -46,7 +46,7 @@ My Server Project is a Python-based web server that allows you to host an HTML w
    Open `config.py` and set your custom domain and static files directory:
    ```python
    class Config:
-       SERVER_NAME = "www.myserverproject.proj"
+       SERVER_NAME = "www.myserverproject.proj:5000"
        STATIC_FOLDER = "static_files"
    ```
 
@@ -73,7 +73,7 @@ My Server Project is a Python-based web server that allows you to host an HTML w
 
 1. **Run the Flask application:**
    ```sh
-   sudo python run.py  # Use sudo only if running on port 80
+   sudo python run.py  # Use sudo only if running on port 5000
    ```
 
 2. **Access your website:**
@@ -85,7 +85,7 @@ My Server Project is a Python-based web server that allows you to host an HTML w
 To change the custom domain or the static files directory, simply update the `config.py` file:
 ```python
 class Config:
-    SERVER_NAME = "newdomain.proj"
+    SERVER_NAME = "newdomain.proj:5000"
     STATIC_FOLDER = "new_static_folder"
 ```
 
